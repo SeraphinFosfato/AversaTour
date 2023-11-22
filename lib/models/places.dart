@@ -1,15 +1,19 @@
 import 'dart:ui';
 
 class Places {
-  String name;
-  Color color;
-  String imgName;
-  List<Places> subPlaces;
+  String? name;
+  String? icon;
+  Color? color;
+  String? imgName;
+  List<Places>? subCategories;
 
-  Places(){
-    this.name;
-    this.color;
-    this.imgName;
-    this.subPlaces;
-  }
+  Places(
+    {
+      this.name,
+      this.icon,
+      this.color,
+      this.imgName,
+      this.subCategories
+    }
+    );
 }

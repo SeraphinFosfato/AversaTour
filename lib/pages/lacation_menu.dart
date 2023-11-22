@@ -9,7 +9,7 @@ class LocationMenu extends StatefulWidget {
 
 class _LocationMenuState extends State<LocationMenu> {
 
-
+  List<Places> Placelist =
 
   @override
   Widget build(BuildContext context) {
@@ -31,7 +31,7 @@ class _LocationMenuState extends State<LocationMenu> {
                   itemBuilder: (BuildContext ctx, int Index){
 
                   },
-                  itemCount: ,
+                  itemCount: , // Qui va Placelist.lenght()
                 ),
               )
             ],
