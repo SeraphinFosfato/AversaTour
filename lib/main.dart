@@ -1,4 +1,4 @@
-import 'package:aversa_tour/pages/lacation_1.dart';
+import 'package:aversa_tour/pages/storia_generale_page.dart';
 import 'package:aversa_tour/pages/mappa.dart';
 import 'package:aversa_tour/pages/menu_principale.dart';
 import 'package:flutter/material.dart';
@@ -18,7 +18,7 @@ class MyApp extends StatelessWidget {
       home: MenuPrincipale(),
       routes: {
         '/mappa' :(context) => Mappa(),
-        '/lacation_1' :(context) => StoriaGenerale(),
+        '/lacation_1' :(context) => StoriaGenerale(), //Non cambiare, nome del file dart cambiato tramite refractoring!!
       },
       );
   }

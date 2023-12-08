@@ -25,7 +25,7 @@ class _MenuPrincipaleState extends State<MenuPrincipale> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.white38,
+      backgroundColor: Colors.blue,
       appBar: AppBar(
         title: Text(
           "Applicazione",
@@ -75,7 +75,7 @@ class _MenuPrincipaleState extends State<MenuPrincipale> {
                         height: 80,
                         width: 250,
                         decoration: BoxDecoration(
-                          color: Colors.grey,
+                          color: Colors.blue,
                           borderRadius: BorderRadius.circular(20),
                         ),
                         padding: EdgeInsets.all(20),
@@ -98,12 +98,12 @@ class _MenuPrincipaleState extends State<MenuPrincipale> {
                         height: 80,
                         width: 250,
                         decoration: BoxDecoration(
-                          color: Colors.grey,
+                          color: Colors.blue,
                           borderRadius: BorderRadius.circular(20),
                         ),
                         padding: EdgeInsets.all(20),
                         child: Text(
-                          "Vai a luogo 1",
+                          "Panoramica",
                           textAlign: TextAlign.center,
                           style: TextStyle(
                             color: Colors.white,
@@ -112,7 +112,7 @@ class _MenuPrincipaleState extends State<MenuPrincipale> {
                           ),
                         ),
                       ),
-                    ), //Location_1 test button
+                    ),
                   ],
                 ),
               ),

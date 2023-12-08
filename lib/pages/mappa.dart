@@ -6,13 +6,12 @@ class Mappa extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Color.fromARGB(255, 51, 51, 51),
       appBar: AppBar(
-        title: Text(
-            "Mappa",
-            textAlign: TextAlign.center,
-        ),
-        backgroundColor: Colors.grey,
-        titleSpacing: 1,
+        title: Text("Mappa Locale"),
+      ),
+      body: Container(
+        child: Image.asset('assets/images/Loading.gif'),
       ),
     );
   }
