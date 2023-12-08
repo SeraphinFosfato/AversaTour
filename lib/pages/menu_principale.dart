@@ -51,7 +51,7 @@ class _MenuPrincipaleState extends State<MenuPrincipale> {
             //Immagine del menù
             Expanded(
               child: Image(
-                  image: NetworkImage('https://www.tondisport.it/wp-content/uploads/2017/09/work-in-progress-ebike-2018.png')
+                  image: AssetImage('assets/images/Logo_comune_di_Aversa.png'),
               ),
             ),
 

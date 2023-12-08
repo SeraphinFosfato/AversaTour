@@ -18,7 +18,7 @@ class MyApp extends StatelessWidget {
       home: MenuPrincipale(),
       routes: {
         '/mappa' :(context) => Mappa(),
-        '/lacation_1' :(context) => Location1(),
+        '/lacation_1' :(context) => StoriaGenerale(),
       },
       );
   }

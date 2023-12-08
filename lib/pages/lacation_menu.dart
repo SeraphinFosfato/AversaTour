@@ -1,5 +1,8 @@
 import 'package:flutter/material.dart';
 
+import '../helper/utils.dart';
+import '../models/places.dart';
+
 class LocationMenu extends StatefulWidget {
   const LocationMenu({super.key});
 
@@ -9,7 +12,8 @@ class LocationMenu extends StatefulWidget {
 
 class _LocationMenuState extends State<LocationMenu> {
 
-  List<Places> Placelist =
+  List<Places> Placelist = Utils.getSamplePlaces();
+
 
   @override
   Widget build(BuildContext context) {
@@ -31,7 +35,7 @@ class _LocationMenuState extends State<LocationMenu> {
                   itemBuilder: (BuildContext ctx, int Index){
 
                   },
-                  itemCount: , // Qui va Placelist.lenght()
+                  itemCount: Placelist.length,
                 ),
               )
             ],

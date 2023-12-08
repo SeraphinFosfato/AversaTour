@@ -2,15 +2,15 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 //import 'package:url_launcher/url_launcher.dart';
 
-class Location1 extends StatelessWidget {
-  const Location1({super.key});
+class StoriaGenerale extends StatelessWidget {
+  const StoriaGenerale({super.key});
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
         title: Text(
-          "Luogo 1",
+          "Cenni Storici Generali",
           textAlign: TextAlign.center,
         ),
         backgroundColor: Colors.grey,
@@ -30,7 +30,7 @@ class Location1 extends StatelessWidget {
                   color:  Colors.white,
                   ),
                   child: Image(
-                      image: NetworkImage('https://2caffe.s3.amazonaws.com/terredelvescovado/multimedia/3149_/Chiesa_nuova_di_S._Maria_Assunta_Rosciate_-_Interno_2.jpg')
+                      image: AssetImage('assets/images/Planimetria_Aversa.jpg'),
                   )
               ),
             ),
@@ -49,19 +49,13 @@ class Location1 extends StatelessWidget {
                     Padding(
                       padding: const EdgeInsets.all(10.0), //dolore magna aliqua. Vitae aliquet nec ullamcorper sit amet. Egestas sed tempus urna et pharetra. Mauris sit amet massa vitae tortor condimentum. Amet dictum sit amet justo donec. Id consectetur purus ut faucibus pulvinar. Tortor consequat id porta nibh. Egestas congue quisque egestas diam in arcu cursus. Tellus id interdum velit laoreet id donec ultrices tincidunt arcu. Porta nibh venenatis cras sed. Enim tortor at auctor urna nunc id cursus metus aliquam. Egestas egestas fringilla phasellus faucibus scelerisque eleifend. Molestie nunc non blandit massa enim nec dui nunc mattis. Viverra orci sagittis eu volutpat odio. Ultrices neque ornare aenean euismod elementum nisi. Turpis cursus in hac habitasse platea dictumst quisque sagittis.
                       child: Text(
-                          "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et ",
+                        "Secondo provate testimonianze storiche la città di Aversa si sviluppò in quel territorio ove esisteva il casale Sancti Pauli at Averze 1. Furono, però, i Normanni, capeggiati da Rainulfo Drengot, a fondarla nel 1030. La contea fu, infatti, donata allo stesso Drengot dal duca Sergio IV, mosso dallo scopo di rafforzare la linea difensiva settentrionale del suo dominio. La posizione strategica dell’antico casale, posto tra la via Campana e la via Cumana, consentiva il controllo di un ampio territorio comprendente la stessa Liburia. L’intento di consolidare l’alleanza indusse il duca di Napoli Sergio IV a concedere in sposa a Rainulfo sua sorella Sigelgaida. Tale operazione consentì l’asservimento dell’intera Liburia al dominio Normanno. Il territorio si connotava per la presenza di siepi e fossati. Fu, però, l’aumentata forza militare e l’incremento della popolazione a rendere possibile la creazione di mura fortificate strutturate all’interno con uno schema urbano ad impianto radiocentrico.",
                         style: TextStyle(
-                          fontSize: 25,
+                          fontSize: 20,
                           color: Colors.white,
                         ),
                       ),
                     ),
-                    InkWell(
-                      child: Text(
-                        "dolore magna aliqua"
-                      ),
-                      //onTap: () => ,
-                    )
                   ],
                 ),
                 ),
