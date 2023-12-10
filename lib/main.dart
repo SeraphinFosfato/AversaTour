@@ -1,3 +1,4 @@
+import 'package:aversa_tour/pages/parrocchiella_page.dart';
 import 'package:aversa_tour/pages/storia_generale_page.dart';
 import 'package:aversa_tour/pages/mappa.dart';
 import 'package:aversa_tour/pages/menu_principale.dart';
@@ -19,6 +20,7 @@ class MyApp extends StatelessWidget {
       routes: {
         '/mappa' :(context) => Mappa(),
         '/lacation_1' :(context) => StoriaGenerale(), //Non cambiare, nome del file dart cambiato tramite refractoring!!
+        '/parrocchiella_page' :(context) => ParrochiellaMain(),
       },
       );
   }

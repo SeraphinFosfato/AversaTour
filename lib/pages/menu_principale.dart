@@ -92,7 +92,7 @@ class _MenuPrincipaleState extends State<MenuPrincipale> {
                     ), //Start button
                     TextButton(
                       onPressed: () {
-                        Navigator.pushNamed(context, '/lacation_1');
+                        Navigator.pushNamed(context, '/parrocchiella_page');
                       },
                       child: Container(
                         height: 80,
