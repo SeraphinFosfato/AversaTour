@@ -28,12 +28,12 @@ class _MenuPrincipaleState extends State<MenuPrincipale> {
       backgroundColor: Colors.blue,
       appBar: AppBar(
         title: Text(
-          "Applicazione",
+          "AversaTour App",
           style: TextStyle(
             fontSize: 25,
             fontWeight: FontWeight.bold,
           ),
-        ),
+        ), //Titolo applicazione
         backgroundColor: Colors.white30,
         actions: [
           IconButton(
@@ -48,12 +48,11 @@ class _MenuPrincipaleState extends State<MenuPrincipale> {
 
         child: Column(
           children: [
-            //Immagine del menù
             Expanded(
               child: Image(
                   image: AssetImage('assets/images/Logo_comune_di_Aversa.png'),
               ),
-            ),
+            ), //Logo menù
 
             //Rettangolo contenente i vari tasti
             Center(
@@ -63,7 +62,7 @@ class _MenuPrincipaleState extends State<MenuPrincipale> {
                 decoration: BoxDecoration(
                   color: Colors.white,
                   borderRadius: BorderRadius.circular(20),
-                ),
+                ),//Istanza rettangolo bianco del menù
                 padding: EdgeInsets.all(20),
                 child: Column(
                   children: [
@@ -89,10 +88,35 @@ class _MenuPrincipaleState extends State<MenuPrincipale> {
                           ),
                         ),
                       ),
-                    ), //Start button
+                    ), //Tasto "Inizia" --> Mappa Google
+
                     TextButton(
                       onPressed: () {
-                        Navigator.pushNamed(context, '/parrocchiella_page');
+                        Navigator.pushNamed(context, '/lacation_menu');
+                      },
+                      child: Container(
+                        height: 100,
+                        width: 250,
+                        decoration: BoxDecoration(
+                          color: Colors.blue,
+                          borderRadius: BorderRadius.circular(20),
+                        ),
+                        padding: EdgeInsets.all(20),
+                        child: Text(
+                          "Panoramica Luoghi Storici",
+                          textAlign: TextAlign.center,
+                          style: TextStyle(
+                            color: Colors.white,
+                            fontSize: 25,
+                            fontWeight: FontWeight.bold,
+                          ),
+                        ),
+                      ),
+                    ), //Tasto "Panoramica"
+
+                    TextButton(
+                      onPressed: () {
+                        Navigator.pushNamed(context, '/lacation_1');
                       },
                       child: Container(
                         height: 80,
@@ -103,19 +127,19 @@ class _MenuPrincipaleState extends State<MenuPrincipale> {
                         ),
                         padding: EdgeInsets.all(20),
                         child: Text(
-                          "Panoramica",
+                          "Storia Generale",
                           textAlign: TextAlign.center,
                           style: TextStyle(
                             color: Colors.white,
-                            fontSize: 35,
+                            fontSize: 29,
                             fontWeight: FontWeight.bold,
                           ),
                         ),
                       ),
-                    ),
+                    ), //Tasto "Panoramica"
                   ],
-                ),
-              ),
+                ), //Contenuto rettangolo bianco del menù
+              ),//Menu
             ),
           ],
         ),
