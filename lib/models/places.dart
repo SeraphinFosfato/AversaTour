@@ -5,15 +5,13 @@ class Places {
   String? icon;
   Color? color;
   String? imgName;
-  List<Places>? subCategories;
 
   Places(
     {
       this.name,
       this.icon,
       this.color,
-      this.imgName,
-      this.subCategories
+      this.imgName
     }
     );
 }

@@ -8,8 +8,7 @@ class Utils {
         name: "Torre Annunziata",
         color: Colors.indigo,
         imgName: "annunziata_preview",
-        icon: "TorreAnnunziata",
-        subCategories:  [],
+        icon: "TorreAnnunziata"
       )
     ];
   }
